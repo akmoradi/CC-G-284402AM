@@ -10,6 +10,11 @@ public class Auto {
 	
 	private int baujahr;
 	
+	private Motor motor;
+	
+	private Abmessung abmessung;
+	
+	
 	public Auto(int id, String marke, String modell, int baujahr) {
 		this.id = id;
 		this.marke = marke;
@@ -49,10 +54,27 @@ public class Auto {
 	public void setBaujahr(int baujahr) {
 		this.baujahr = baujahr;
 	}
+//	
+//	@Override
+//	public String toString() {
+//		return this.id + ", "+ this.marke + ", " + this.modell + ", " + this.baujahr;
+//	}
+
+	public Motor getMotor() {
+		return motor;
+	}
+
+	public void setMotor(Motor motor) {
+		this.motor = motor;
+	}
 	
-	@Override
-	public String toString() {
-		return this.id + ", "+ this.marke + ", " + this.modell + ", " + this.baujahr;
+	public Abmessung getAbmessung() {
+		return abmessung;
+	}
+	
+	
+	public void setAbmessung(Abmessung abmessung) {
+		this.abmessung = abmessung;
 	}
 	
 }
