@@ -12,6 +12,15 @@ public class Motor {
 	
 	private int hoechstgeschwindigkeit;
 
+	public Motor(double hubraum, int leistung, int drehmoment, double beschleunigung, int hoechstgeschwindigkeit) {
+		super();
+		this.hubraum = hubraum;
+		this.leistung = leistung;
+		this.drehmoment = drehmoment;
+		this.beschleunigung = beschleunigung;
+		this.hoechstgeschwindigkeit = hoechstgeschwindigkeit;
+	}
+	
 	public double getHubraum() {
 		return hubraum;
 	}
@@ -52,15 +61,5 @@ public class Motor {
 		this.hoechstgeschwindigkeit = hoechstgeschwindigkeit;
 	}
 
-	public Motor(double hubraum, int leistung, int drehmoment, double beschleunigung, int hoechstgeschwindigkeit) {
-		super();
-		this.hubraum = hubraum;
-		this.leistung = leistung;
-		this.drehmoment = drehmoment;
-		this.beschleunigung = beschleunigung;
-		this.hoechstgeschwindigkeit = hoechstgeschwindigkeit;
-	}
-	
-	
 	
 }
